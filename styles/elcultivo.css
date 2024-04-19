@@ -1,0 +1,91 @@
+@import url(style.css);
+
+main {
+  background-image: url(../images/elcultivo/fondo.svg);
+  background-repeat: repeat;
+  background-size:cover;
+  background-position: top;
+}
+
+p {
+  background-color: rgb(255, 242, 227, 0.8);
+  color: #d35b02;
+  font-weight: 700;
+  line-height: 1.5rem;
+  height: 100%;
+  font-size: 1.25rem;
+}
+
+.ImagenCultivo{
+  max-width: 300px; 
+}
+.TituloCultivo{
+padding-block: 1rem;
+text-align: center;
+}
+p{
+  color: #d35b02;
+  font-weight: 700;
+  line-height: 1.5rem;
+  height: 100%;
+  width: 100%;
+  font-size: 1.125rem;
+}
+
+.Parrafo1 > p {
+  text-align: justify;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.Parrafo1 > img {
+  padding-left: 2rem;
+  width: 280px;
+  float: right;
+}
+.cultivoUNO {
+  min-height: 380px;
+}
+/* Segundo parrafo */
+
+.ImagenPersona{
+  max-width: 1000px; 
+}
+
+.Parrafo2 > p {
+  text-align:justify;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+.Parrafo2 > img {
+  padding-top: 2rem;
+  padding-right: 2rem;
+  width: 400px;
+  float: left;
+}
+.ImagenOracion{
+  max-width: 300px; 
+}   
+.TituloOracion{
+padding-top: 7rem;
+padding-bottom: 1rem;
+text-align: center;
+}
+.Planta2{
+max-width: 200px;
+
+}   
+.Planeta{
+max-width: 300px; 
+}   
+.Parrafo3 > p {
+margin-left: 20px;
+}
+.Parrafo3 > .Planta2 {
+padding-right: 2rem;
+float: left;
+}
+.Parrafo3 > .Planeta {
+padding-top: 1rem;
+float: right;
+} 

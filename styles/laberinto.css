@@ -1,0 +1,115 @@
+@import url(style.css);
+
+body {
+  overflow-x: hidden;
+  background-image: url(../images/laberinto/laberintobg.png);
+  background-repeat: repeat;
+}
+
+p {
+  color: var(--navbar-text-color);
+  font-weight: 700;
+  line-height: 1.5em;
+  font-size: 1.25rem;
+  background-color: var(--bg-color-1);
+}
+
+.abs {
+  position: absolute;
+}
+
+.lab__info {
+  text-align: center;
+}
+
+.lab__info > p {
+  margin-block: 2.5%;
+}
+
+.laberinth {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.game {
+  position: relative;
+}
+
+.pergamino {
+  user-select: none;
+}
+
+.playable,
+.drawable {
+  position: absolute;
+  top: 5%;
+  left: 57%;
+  transform: translateX(-57%);
+  user-select: none;
+}
+
+.playable {
+  max-width: 462px;
+  aspect-ratio: 22/27;
+  width: 50%;
+}
+
+.lupa {
+  left: -40px;
+  bottom: 30%;
+}
+
+.lapiz {
+  left: -2%;
+  top: 10%;
+}
+
+.heart {
+  right: -21%;
+  top: 25%;
+}
+
+.kidbtm {
+  scale: 1.2;
+  bottom: 39px;
+  right: -40%;
+}
+
+.eraser {
+  transform: rotate(15deg);
+  scale: 0.9;
+  bottom: 25%;
+  right: 10%;
+}
+
+@media (max-width: 900px) {
+  .lupa {
+    scale: 0.75;
+    bottom: 45%;
+    left: -80px;
+  }
+
+  .lapiz {
+    scale: 0.75;
+    left: 0;
+  }
+
+  .kidbtm {
+    right: -10%;
+  }
+
+  .heart {
+    scale: 0.7;
+    right: -5%;
+  }
+}
+
+@media (max-width: 800px) {
+  .lapiz,
+  .lupa,
+  .kidbtm,
+  .heart {
+    display: none;
+  }
+}

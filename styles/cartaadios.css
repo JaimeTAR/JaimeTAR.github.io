@@ -1,0 +1,105 @@
+@import url(style.css);
+
+main {
+  background-image: url(../images/cartadios/fondo.png);
+  background-position: top;
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+p {
+  background-color: rgb(255, 242, 227, 0.8);
+  color: #d35b02;
+  font-weight: 700;
+  line-height: 1.5rem;
+  height: 100%;
+  width: 100%;
+  font-size: 1.25rem;
+}
+
+/* Tamaño y formato de imagenes */
+.titulocartaimg{
+    max-width: 300px;
+}
+.velaimg{
+    max-width: 250px;
+}
+.numero1img{
+    max-width:300px;
+    margin-right: 30px;
+}
+.numero2img{
+    max-width:300px;
+    margin-right: 30px;
+}
+
+/*Titulo*/
+.titulocarta{
+    padding-block: 1rem;
+    text-align: center;
+}
+/*Parrafos*/
+.P1 > p {
+    text-align: justify;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+  
+.P1 > img {
+   padding-left: 2rem;
+   width: 250px;
+   float: right;
+}
+.P2 > p {
+    text-align: justify;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+  
+.P2 > img {
+   margin: 2px;
+   padding-left: 2rem;
+   float: left;
+}
+.P3 > p {
+    text-align: justify;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+  
+.P3 > img {
+   padding-left: 2rem;
+   float: left;
+}
+.P4{
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 1rem;
+}
+/*seccion 2*/
+.lupa{
+  max-width: 300px;
+}
+.corona{
+  max-width: 300px;
+}
+.arbol{
+  max-width: 300px;
+}
+.imagenes > li{
+  display: inline-block;
+  list-style: none;
+  margin: 30px;
+
+}
+/*seccion 3*/
+.P33 > p {
+  text-align: justify;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.P33 > img {
+  max-width: 300px;
+  float: right;
+  margin: 50px;
+}

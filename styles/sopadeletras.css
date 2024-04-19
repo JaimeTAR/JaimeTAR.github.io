@@ -1,0 +1,398 @@
+@import url(style.css);
+
+body{
+  overflow-x: hidden;
+}
+
+.highlighted {
+  color: #54291e;
+}
+
+.sopadeletras--firstcontainer {
+  background-image: url(../images/sopadeletras/sopadeletrasbg.png);
+  background-size: contain;
+  background-position: top;
+  padding-bottom: 4rem;
+}
+
+.start {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.start > img {
+  width: 300px;
+}
+
+.start--focos{
+  display: flex;
+  justify-content: space-between;
+}
+
+.focoinvis{
+  opacity: 0;
+}
+
+.frase {
+  color: #d35b02;
+  font-size: 150%;
+  font-weight: 700;
+  line-height: 1.5rem;
+  height: 100%;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.carta--sopa {
+  margin-top: 3%;
+  background-image: url(../images/sopadeletras/carta.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 5%;
+}
+
+#contenedor {
+  text-align: center;
+  padding: 4%;
+  padding-top: 0;
+  margin: auto;
+}
+
+#contenedor div {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#contenedor .letra {
+  text-align: center;
+  height: 3.2vw;
+  width: 3.2vw;
+  max-height: 3.5vw;
+  max-width: 3.5vw;
+  background-color: #e7e6e7;
+  font: 100% sans-serif;
+}
+
+#contenedor .sdlselected {
+  background-color: rgb(255, 136, 0);
+}
+
+#contenedor:hover .sdlselected:hover {
+  background-color: rgb(255, 136, 0);
+  font-weight: bold;
+}
+
+#contenedor > div > button:hover {
+  background-color: rgb(255, 215, 172);
+  font-weight: bold;
+}
+
+#contenedor .found {
+  background-color: #ff7b00;
+  color: white;
+  border: 2.5px solid black;
+  font-weight: bold;
+  text-shadow: 0px 2px 3px #000;
+}
+
+#contenedor .found:hover {
+  background-color: rgb(255, 215, 172);
+  font-weight: bold;
+}
+
+#contenedor .complete {
+  background-color: rgb(255, 215, 172);
+  color: #ff5500;
+}
+
+#BTNrefresh {
+  position: absolute;
+  bottom: 0em;
+}
+
+.sopadeletras--secondcontainer {
+  background-image: url(../images/sopadeletras/valordonesbg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  margin-bottom: 3%;
+}
+
+.palabras--container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.palabras {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  align-items: center;
+  animation: 10s ease-in-out running infinite floatanimation;
+
+}
+
+.palabras--list {
+  width: 55%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5%;
+  z-index: 3;
+}
+
+.palabras--list > img {
+  margin-bottom: 2%;
+  width: 28%;
+}
+
+.palabras--list > img:last-child {
+  margin: 0 auto;
+}
+
+.sdlsideimg {
+  width: 22%;
+  background-size: contain;
+  scale: 1.3;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sdlsideimg--book {
+  background-image: url(../images/sopadeletras/sdlbook.svg);
+  animation: 5s ease-in-out running infinite floatanimation;
+  height: 100px;
+}
+
+.sdlsideimg--hands {
+  background-image: url(../images/sopadeletras/sdlhands.svg);
+  animation: 3s ease-in-out running infinite floatanimation;
+  height: 120px;
+}
+
+.sdlsideimg--foco {
+  background-image: url(../images/sopadeletras/sdlfoco.svg);
+  height: 150px;
+  animation: 3s ease-in-out running infinite floatanimation;
+  border-top: 15%;
+  z-index: -1;
+}
+
+@keyframes floatanimation {
+  from {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 900px) {
+  .sopadeletras--firstcontainer {
+    padding-bottom: 0;
+  }
+
+  #contenedor {
+    text-align: center;
+    padding: 6%;
+    margin: auto;
+  }
+
+  #contenedor div {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #contenedor .letra {
+    text-align: center;
+    height: 5vw;
+    width: 5vw;
+    max-height: 5vw;
+    max-width: 5vw;
+    text-transform: uppercase;
+    background-color: #e7e6e7;
+    font: 65% sans-serif;
+  }
+
+  #contenedor .sdlselected {
+    background-color: rgb(255, 136, 0);
+  }
+
+  #contenedor:hover .sdlselected:hover {
+    background-color: rgb(255, 136, 0);
+    font-weight: bold;
+  }
+
+  #contenedor > div > button:hover {
+    background-color: rgb(255, 215, 172);
+    font-weight: bold;
+  }
+
+  #contenedor .found {
+    background-color: #ff7b00;
+    color: white;
+    border: 2.5px solid black;
+    font-weight: bold;
+    text-shadow: 0px 2px 3px #000;
+  }
+
+  .sdlsideimg--foco {
+    height: 90px;
+  }
+
+  .sdlsideimg--book{
+    height: 80px;
+  }
+
+  .sdlsideimg--hands{
+    height: 95px;
+  }
+
+  #contenedor .found:hover {
+    background-color: rgb(255, 215, 172);
+    font-weight: bold;
+  }
+
+  #contenedor .solved {
+    background-color: rgb(255, 136, 0);
+    color: white;
+  }
+
+  #contenedor .complete {
+    background-color: rgb(255, 215, 172);
+    color: #ff5500;
+  }
+
+  #BTNrefresh {
+    position: absolute;
+    bottom: 0em;
+  }
+
+  .palabras {
+    padding: 0;
+    padding-block: 2%;
+  }
+
+  .palabras--list > img {
+    margin-bottom: 3%;
+    width: 40%;
+  }
+
+  .palabras--list {
+    justify-content: center;
+    gap: 10%;
+  }
+}
+
+@media (max-width: 525px) {
+  .sopadeletras--firstcontainer {
+    padding-bottom: 0;
+  }
+
+  .carta--sopa {
+    margin-top: 5%;
+    background-image: url(../images/carta.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  #contenedor {
+    text-align: center;
+    padding: 10%;
+    margin: auto;
+  }
+
+  #contenedor div {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #contenedor .letra {
+    text-align: center;
+    height: 5vw;
+    width: 5vw;
+    max-height: 5vw;
+    max-width: 5vw;
+    text-transform: uppercase;
+    background-color: #e7e6e7;
+    font: 55% sans-serif;
+  }
+
+  #contenedor .sdlselected {
+    background-color: rgb(255, 136, 0);
+  }
+
+  #contenedor:hover .sdlselected:hover {
+    background-color: rgb(255, 136, 0);
+    font-weight: bold;
+  }
+
+  #contenedor > div > button:hover {
+    background-color: rgb(255, 215, 172);
+    font-weight: bold;
+  }
+
+  #contenedor .found {
+    background-color: #ff7b00;
+    color: white;
+    border: 2.5px solid black;
+    font-weight: bold;
+    text-shadow: 0px 2px 3px #000;
+  }
+
+  #contenedor .found:hover {
+    background-color: rgb(255, 215, 172);
+    font-weight: bold;
+  }
+
+  #contenedor .solved {
+    background-color: rgb(255, 136, 0);
+    color: white;
+  }
+
+  #contenedor .complete {
+    background-color: rgb(255, 215, 172);
+    color: #ff5500;
+  }
+
+  #BTNrefresh {
+    position: absolute;
+    bottom: 0em;
+  }
+
+  .palabras {
+    padding: 0;
+    padding-block: 2%;
+  }
+
+  .palabras--list > img {
+    margin-bottom: 3%;
+    width: 70%;
+  }
+
+  .palabras--list {
+    justify-content: center;
+    gap: 10%;
+  }
+
+  .sdlsideimg--foco {
+    height: 70px;
+  }
+
+  .sdlsideimg--book{
+    transform: translateX(-100%);
+  }
+
+  .sdlsideimg--hands{
+    height: 95px;
+  }  
+}

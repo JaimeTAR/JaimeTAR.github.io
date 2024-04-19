@@ -1,0 +1,205 @@
+@import url(style.css);
+
+.antivalores--firstcontainer {
+    background-image: url(../images/infografia/infografiabg.png);
+    background-size: 100cap;
+}
+
+.antivalores--title>img{
+    width: 300px;
+    padding-bottom: 2%;
+}
+
+.antivalores--title {
+    text-align: center;
+    position: relative;
+  }
+
+.foquitos{
+    position:absolute;
+    left: 70%;
+    scale:0.8;
+    transform: translateY(-38%);
+}
+
+.frase {
+    color: #d35b02;
+    font-size: 150%;
+    font-weight: 700;
+    line-height: 1.5rem;
+    height: 100%;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+
+}
+.column {
+    float: right;
+    width: 70%;
+    padding-top: 3%;
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contenedor{
+  position: relative;
+}
+
+.tabla {
+  padding: 3%;
+}
+
+.juego{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.titlepos{
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.pasoH {
+    position: relative;
+    padding-left: 100px;
+    padding-block: 10px;
+    min-height: 80px;
+    max-width: 90%;
+    text-align: left;   
+    color: #d35b02;
+    font-weight: 700;
+    line-height: 1.5rem;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .pasoH::before {
+    content: "";
+    position: absolute;
+    width: 85px;
+    background-size: cover;
+    height: 85px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .pasoH:nth-of-type(1)::before {
+    top: 20%;
+    background-image: url(../images/antivalores/uno.svg);
+  }
+  .pasoH:nth-of-type(2)::before {
+    top:35%;
+    background-image: url(../images/antivalores/tres.svg);
+  }
+  .pasoH:nth-of-type(3)::before {
+    top: 45%;
+    background-image: url(../images/antivalores/cinco.svg);
+  }
+  .pasoH:nth-of-type(4)::before {
+    top: 60%;
+    background-image: url(../images/antivalores/siete.svg);
+  }
+  .pasoH:nth-of-type(5)::before {
+    background-image: url(../images/antivalores/dos.svg);
+  }
+
+  .pasoV {
+    position: relative;
+    padding-left: 100px;
+    padding-block: 10px;
+    min-height: 80px;
+    max-width: 90%;
+    text-align: left;
+    color: #d35b02;
+    font-weight: 700;
+    line-height: 1.5rem;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .pasoV::before {
+    content: "";
+    position: absolute;
+    width: 85px;
+    background-size: cover;
+    height: 85px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .pasoV:nth-of-type(1)::before {
+    top: 20%;
+    background-image: url(../images/antivalores/dos.svg);
+  }
+  .pasoV:nth-of-type(2)::before {
+    top:35%;
+    background-image: url(../images/antivalores/cuatro.svg);
+  }
+  .pasoV:nth-of-type(3)::before {
+  top: 45%;
+  background-image: url(../images/antivalores/seis.svg);
+  }
+
+@media (max-width: 1256px){
+  .foquitos{
+    transform: translateY(-37%);
+    left:65%
+
+  }
+
+@media (max-width: 980px){
+  .foquitos{
+    scale: 0.7;
+    transform: translateY(-43%);
+
+  }
+}
+
+@media (max-width: 900px){
+  .foquitos{
+    display: none;
+  }
+  .titlepos{
+    padding-bottom: 7%;
+  }
+  .row{
+    display: block;
+  }
+  .column{
+    all:unset;
+    text-align: center;
+    padding-left: 5%;
+  }
+  .tabla{ 
+    width: 90%;
+  }
+  .pasoH{
+    margin-left: 5%;
+    font-size: 150%;
+  }
+  .pasoV{
+    margin-left: 5%;
+    font-size: 150%;
+  }
+}
+
+
+@media (max-width: 525px) {
+  .pasoH{
+    font-size: 100%;
+  }
+  .pasoV{
+    font-size: 100%;
+  }
+}
+}
