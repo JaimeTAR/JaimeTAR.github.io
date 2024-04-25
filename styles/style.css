@@ -44,7 +44,6 @@ body {
   font-family: inherit;
   margin: 0;
   background-color: var(--bg-color-1);
-  overflow-x: hidden;
 }
 
 body::before {
@@ -70,6 +69,10 @@ header {
   align-items: center;
   justify-content: space-between;
   z-index: 100;
+}
+
+main {
+  overflow-x: hidden;
 }
 
 footer {
