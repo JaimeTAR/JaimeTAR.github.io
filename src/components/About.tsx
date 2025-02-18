@@ -6,7 +6,7 @@ import { PiJoystickFill } from "react-icons/pi";
 
 const About = () => {
   return (
-    <section className="bg-neutral-700 mb-199">
+    <section className="bg-neutral-700">
       <div className="max-w-[1080px] mx-auto py-12 flex gap-[2.5%]">
         <img
           src={image}

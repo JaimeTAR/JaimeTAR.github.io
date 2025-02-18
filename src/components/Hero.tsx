@@ -28,12 +28,12 @@ function Hero() {
   }, []);
   return (
     <header>
-      <section className="relative py-16 flex flex-col justify-center items-center">
+      <section className="relative py-16 flex flex-col justify-center items-center bg-stone-900">
         <BgNoise />
         <img
           src={image}
           alt="Logo"
-          className="border-4 border-lime-600 rounded-full p-2 overflow-clip h-auto max-w-96"
+          className="border-4 border-lime-600 rounded-full p-2 overflow-clip h-auto max-w-96 z-10"
         />
         <div className="flex items-end gap-4 my-6">
           <ul className="flex items-center justify-center border-t-4 border-lime-600 h-fit">

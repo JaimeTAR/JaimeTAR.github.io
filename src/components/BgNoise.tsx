@@ -65,7 +65,7 @@ const BgNoise = () => {
     }
   }, []);
 
-  return <canvas id="canvas" className="absolute -z-10" />;
+  return <canvas id="canvas" className="absolute" />;
 };
 
 export default BgNoise;
