@@ -35,7 +35,7 @@ function Hero() {
           alt="Logo"
           className="border-4 border-lime-600 rounded-full p-2 overflow-clip h-auto max-w-96 z-10"
         />
-        <div className="flex items-end gap-4 my-6">
+        <div className="flex items-end gap-4 my-6 z-10">
           <ul className="flex items-center justify-center border-t-4 border-lime-600 h-fit">
             <li className="h-fit px-2 pt-2 pb-2 hover:text-lime-500 cursor-pointer transition-all duration-300 hover:pt-3 hover:px-3">
               <a href="https://github.com/JaimeTAR" target="blank">
@@ -56,7 +56,7 @@ function Hero() {
             </li>
           </ul>
         </div>
-        <div className="flex items-center justify-center mb-8">
+        <div className="flex items-center justify-center mb-8 z-10">
           <div className="text-2xl relative overflow-hidden w-full">
             <div
               className={`flex items-center justify-center gap-2 transition-all duration-300 ${
@@ -68,7 +68,7 @@ function Hero() {
             </div>
           </div>
         </div>
-        <button className="border-2 px-4 py-2 rounded-md hover:border-lime-500 hover:text-lime-500 transition-colors duration-300 cursor-pointer">
+        <button className="border-2 px-4 py-2 rounded-md hover:border-lime-500 hover:text-lime-500 transition-colors duration-300 cursor-pointer z-10">
           Contact me
         </button>
       </section>
