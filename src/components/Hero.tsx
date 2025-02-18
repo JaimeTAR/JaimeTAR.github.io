@@ -38,7 +38,9 @@ function Hero() {
         <div className="flex items-end gap-4 my-6">
           <ul className="flex items-center justify-center border-t-4 border-lime-600 h-fit">
             <li className="h-fit px-2 pt-2 pb-2 hover:text-lime-500 cursor-pointer transition-all duration-300 hover:pt-3 hover:px-3">
-              <FaGithub size={25} />
+              <a href="https://github.com/JaimeTAR" target="blank">
+                <FaGithub size={25} />
+              </a>
             </li>
           </ul>
           <div>
@@ -48,7 +50,9 @@ function Hero() {
           </div>
           <ul className="flex items-center justify-center border-t-4 border-lime-600 h-fit">
             <li className="h-fit px-2 pt-2 pb-2 hover:text-lime-500 cursor-pointer transition-all duration-300 hover:pt-3 hover:px-3">
-              <FaLinkedin size={25} />
+              <a href="https://www.linkedin.com/in/jalfarodev/" target="blank">
+                <FaLinkedin size={25} />
+              </a>
             </li>
           </ul>
         </div>

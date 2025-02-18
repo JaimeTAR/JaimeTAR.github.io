@@ -1,10 +1,13 @@
+import About from "./components/About";
 import Hero from "./components/Hero";
 
 function App() {
   return (
     <>
       <Hero />
-      <section>Hola</section>
+      <main>
+        <About />
+      </main>
     </>
   );
 }
