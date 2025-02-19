@@ -10,11 +10,12 @@ const Contact = () => {
           <div className="w-[74%] h-[72%] bg-stone-300 absolute top-[14.5%] left-[13.1%] p-4 flex gap-8">
             <div className="w-6/10">
               <h2 className="mb-4 uppercase font-bold text-xl">Leave a message</h2>
-              <form action="https://formsubmit.co/alfaro.rodriguez.jaime@gmail.com" method="POST">
+              <form action="https://formsubmit.co/bcd36d497f9a8d2ff136747ffd80ec88" method="POST">
                 <label htmlFor="name_input">Name *</label>
                 <input
                   id="name_input"
                   type="text"
+                  name="name"
                   placeholder="Harrison Wells"
                   className="bg-stone-100 rounded-md py-1 px-2 w-full mb-3"
                   required
@@ -23,12 +24,14 @@ const Contact = () => {
                 <input
                   id="email_input"
                   type="email"
+                  name="email"
                   placeholder="harrison.wells@starlabs.com"
                   className="bg-stone-100 mb-3 rounded-md py-1 px-2 w-full"
                   required
                 />
                 <label htmlFor="message_input">Message *</label>
                 <textarea
+                  name="message"
                   id="message_input"
                   placeholder="Hi, im interested in your skills! Please reach out to this email."
                   className="bg-stone-100 mb-3 rounded-md py-1 px-2 w-full resize-none h-[10%]"
