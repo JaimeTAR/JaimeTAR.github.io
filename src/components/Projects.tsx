@@ -8,18 +8,21 @@ const projects = [
     subtitle: "Static webpage",
     year: "2025",
     imgSrc: PortfolioImg,
+    tech: ["React", "Tailwind"],
   },
   {
     title: "Researcher Network App",
     subtitle: "Android App",
     year: "2024",
     imgSrc: ResearcherImg,
+    tech: ["Kotlin", "Java", "PostgreSQL"],
   },
   {
     title: "Cáritas de Guadalajara",
     subtitle: "Interactive webpage",
     year: "2023",
     imgSrc: CaritasImg,
+    tech: ["HTML", "CSS", "JavaScript"],
   },
 ];
 
@@ -51,6 +54,16 @@ const Projects = () => {
               <p className="pl-1 text-md font-light group-hover:text-lime-200 transition-all duration-500 ">
                 {project.subtitle}
               </p>
+              <div className="flex gap-1 text-center mt-2 ml-1">
+                {project.tech.map((language) => (
+                  <div className="relative inline-block">
+                    <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 via-green-500 to-teal-500 rounded-md" />
+                    <p className="text-xs relative bg-stone-900 text-blck px-2 py-1 rounded-md m-[1px]">
+                      {language}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
         </div>
