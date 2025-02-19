@@ -9,7 +9,7 @@ const ProgrammingCarousel = () => {
         <h2 className="text-2xl mb-4 font-bold">Programming Languages</h2>
         <Marquee speed={10} gradient gradientColor="#0c0a0a" gradientWidth={50}>
           {languages.map((item) => (
-            <div className="py-10 mx-5">
+            <div key={"carousel_" + item} className="py-10 mx-5">
               <div className="relative inline-block">
                 <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 via-green-500 to-teal-500 rounded-md shadow-[0px_0px_25px_0px_rgba(124,207,0,1)]" />
                 <p className="relative bg-stone-950 text-blck px-4 py-1 rounded-md m-[1px]">{item}</p>
