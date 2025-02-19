@@ -11,6 +11,8 @@ const Contact = () => {
             <div className="w-6/10">
               <h2 className="mb-4 uppercase font-bold text-xl">Leave a message</h2>
               <form action="https://formsubmit.co/bcd36d497f9a8d2ff136747ffd80ec88" method="POST">
+                <input type="hidden" name="_format" value="json" />
+                <input type="hidden" name="_template" value="table" />
                 <label htmlFor="name_input">Name *</label>
                 <input
                   id="name_input"
