@@ -6,7 +6,7 @@ import { PiJoystickFill } from "react-icons/pi";
 
 const About = () => {
   return (
-    <section className="bg-neutral-700">
+    <section className="bg-neutral-800">
       <div className="max-w-[1080px] mx-auto py-12 flex gap-[2.5%]">
         <img
           src={image}
@@ -31,7 +31,7 @@ const About = () => {
           <div className="relative my-4 hover:scale-105 transform-all duration-300">
             <div className="absolute -left-[74px] flex items-center gap-2">
               2022
-              <span className="bg-lime-500 p-1 rounded-full text-white border-6 border-neutral-700">
+              <span className="bg-lime-500 p-1 rounded-full text-white border-6 border-neutral-800">
                 <FaBookOpen />
               </span>
             </div>
@@ -42,7 +42,7 @@ const About = () => {
           <div className="relative my-4 hover:scale-105 transform-all duration-300">
             <div className="absolute -left-[74px] flex items-center gap-2">
               2023
-              <span className="bg-lime-500 p-1 rounded-full text-white border-6 border-neutral-700">
+              <span className="bg-lime-500 p-1 rounded-full text-white border-6 border-neutral-800">
                 <MdOutlineWeb />
               </span>
             </div>
@@ -53,7 +53,7 @@ const About = () => {
           <div className="relative my-4 hover:scale-105 transform-all duration-300">
             <div className="absolute -left-[74px] flex items-center gap-2">
               2024
-              <span className="bg-lime-500 p-1 rounded-full text-white border-6 border-neutral-700">
+              <span className="bg-lime-500 p-1 rounded-full text-white border-6 border-neutral-800">
                 <PiJoystickFill />
               </span>
             </div>
@@ -64,7 +64,7 @@ const About = () => {
           <div className="relative my-4 hover:scale-105 transform-all duration-300">
             <div className="absolute -left-[89px] flex items-center gap-2">
               Present
-              <span className="bg-lime-500 p-1 rounded-full text-white border-6 border-neutral-700">
+              <span className="bg-lime-500 p-1 rounded-full text-white border-6 border-neutral-800">
                 <PiJoystickFill />
               </span>
             </div>
@@ -75,7 +75,7 @@ const About = () => {
           <div className="relative my-4 hover:scale-105 transform-all duration-300">
             <div className="absolute -left-[74px] flex items-center gap-2">
               2026
-              <span className="bg-lime-500 p-1 rounded-full text-white border-6 border-neutral-700">
+              <span className="bg-lime-500 p-1 rounded-full text-white border-6 border-neutral-800">
                 <FaGraduationCap />
               </span>
             </div>

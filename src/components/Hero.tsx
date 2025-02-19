@@ -28,7 +28,7 @@ function Hero() {
   }, []);
   return (
     <header>
-      <section className="relative py-16 flex flex-col justify-center items-center bg-stone-900">
+      <section className="relative py-16 flex flex-col justify-center items-center bg-stone-950">
         <BgNoise />
         <img
           src={image}
@@ -69,7 +69,7 @@ function Hero() {
           </div>
         </div>
         <button className="border-2 px-4 py-2 rounded-md hover:border-lime-500 hover:text-lime-500 transition-colors duration-300 cursor-pointer z-10">
-          Contact me
+          <a href="#contact">Contact me</a>
         </button>
       </section>
     </header>

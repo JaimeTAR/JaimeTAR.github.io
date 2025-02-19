@@ -15,7 +15,7 @@ const projects = [
     subtitle: "Android App",
     year: "2024",
     imgSrc: ResearcherImg,
-    tech: ["Kotlin", "Java", "PostgreSQL"],
+    tech: ["Kotlin", "Java", "PostgreSQL", "Python", "AWS"],
   },
   {
     title: "Cáritas de Guadalajara",
@@ -28,20 +28,16 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="bg-neutral-700 py-8">
+    <section className="bg-neutral-800 py-8">
       <div className="max-w-[1080px] mx-auto text-center">
         <h1 className="relative mb-10 text-4xl font-bold text-center before:absolute before:top-1/2 before:left-12 before:w-1/4 before:h-[3px] before:bg-gray-400 after:absolute after:top-1/2 after:right-12 after:w-1/4 after:h-[3px] after:bg-gray-400">
           Most recent projects
         </h1>
         <div className="flex justify-evenly text-left mb-12">
           {projects.map((project) => (
-            <div className="group p-2 min-h-64 w-3/10 bg-stone-900 rounded-md shadow-lg shadow-black cursor-pointer hover:scale-105 transition-all duration-500">
-              <div className="flex justify-center mb-2 w-full aspect-15/9 bg-stone-700 rounded-md mx-auto p-2 group-hover:bg-lime-800 transition-all duration-500">
-                <img
-                  src={project.imgSrc}
-                  alt="Cáritas Thumbnail"
-                  className="max-h-full"
-                />
+            <div className="group p-2 min-h-64 w-3/10 bg-stone-950 rounded-md shadow-lg shadow-black cursor-pointer hover:scale-105 transition-all duration-500">
+              <div className="flex justify-center mb-2 w-full aspect-15/9 bg-stone-900 rounded-md mx-auto p-2 group-hover:bg-lime-800 transition-all duration-500">
+                <img src={project.imgSrc} alt="Cáritas Thumbnail" className="max-h-full" />
               </div>
               <div className="flex justify-between">
                 <h1 className="pl-1 text-lg font-semibold group-hover:text-lime-500 transition-all duration-500">
@@ -58,9 +54,7 @@ const Projects = () => {
                 {project.tech.map((language) => (
                   <div className="relative inline-block">
                     <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 via-green-500 to-teal-500 rounded-md" />
-                    <p className="text-xs relative bg-stone-900 text-blck px-2 py-1 rounded-md m-[1px]">
-                      {language}
-                    </p>
+                    <p className="text-xs relative bg-stone-950 text-blck px-2 py-1 rounded-md m-[1px]">{language}</p>
                   </div>
                 ))}
               </div>
