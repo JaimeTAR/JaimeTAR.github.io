@@ -16,15 +16,19 @@ const About = () => {
         <div className="max-w-[60%] text-lg">
           <h1 className="text-3xl font-bold border-b-2 w-fit pr-1 mb-4">About me </h1>
           <p>
-            I'm a Software Engineering student in my 6th semester, passionate about coding, teamwork, and continuous
-            learning. I love building efficient and scalable solutions, whether in the frontend with React & TailwindCSS
-            or the backend with Node.js & TypeScript.
+            I'm a Software Engineering student in my 6th semester, passionate about coding, especially in Java,
+            teamwork, and continuous learning. <br />
+            <br /> love building efficient and scalable solutions, whether it being a Mobile App with Kotlin or Swift,
+            or a Web App with React & TailwindCSS for the frontend and Node.js & TypeScript for the backend!
           </p>
           <h1 className="text-3xl font-bold border-b-2 w-fit pr-1 mb-4 mt-8">What sets me apart? </h1>
           <p>
-            I have hands-on experience leading a team to develop an engaging educational website for children and
-            adolescents, ensuring a user-friendly experience from design to deployment. I thrive in collaborative
-            environments and enjoy tackling challenges that push my skills further.
+            I have hands-on experience building Mobile Apps, both with Swift and Kotlin+Java with Database integration
+            in the cloud. <br />
+            <br />
+            I've also managed a team to develop an engaging educational website for children and adolescents, ensuring a
+            user-friendly experience from design to deployment. I thrive in collaborative environments and enjoy
+            tackling challenges that push my skills further.
           </p>
         </div>
         <div className="max-w-[25%] ml-[5.5%] text-sm border-l-2 pl-4 flex flex-col justify-evenly">
