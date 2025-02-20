@@ -137,7 +137,7 @@ const Projects = () => {
                 }}
               >
                 <div className="flex justify-center items-center mb-2 w-full aspect-15/9 bg-stone-900 rounded-md mx-auto p-2 group-hover:bg-lime-800 transition-all duration-500">
-                  <img src={project.imgSrc} alt="Cáritas Thumbnail" className="max-h-full h-fit" />
+                  <img src={project.imgSrc} alt="Cáritas Thumbnail" className="max-h-full h-full object-contain" />
                 </div>
                 <div className="flex justify-between">
                   <h1 className="pl-1 text-lg font-semibold group-hover:text-lime-500 transition-all duration-500">
