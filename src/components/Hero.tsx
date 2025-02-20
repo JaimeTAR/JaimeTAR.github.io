@@ -1,13 +1,23 @@
 import { FaCity, FaNodeJs } from "react-icons/fa6";
 import image from "../assets/logo.png";
 import BgNoise from "./BgNoise";
-import { FaLinkedin, FaGithub, FaCode, FaReact } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaCode, FaReact, FaAndroid, FaApple, FaJava } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 const items = [
   { text: "Aspiring Software Engineer", icon: <FaCode size={30} className="text-lime-500" /> },
-  { text: "React + Tailwind Fanatic", icon: <FaReact size={30} className="text-lime-500" /> },
-  { text: "Node.js + Express Enthusiast", icon: <FaNodeJs size={30} className="text-lime-500" /> },
+  { text: "Java Fanatic", icon: <FaJava size={30} className="text-lime-500" /> },
+  {
+    text: "Android and iOS Developer",
+    icon: (
+      <>
+        <FaAndroid size={30} className="text-lime-500" />
+        <FaApple size={30} className="text-lime-500" />
+      </>
+    ),
+  },
+  { text: "React + Tailwind Enthusiast", icon: <FaReact size={30} className="text-lime-500" /> },
+  { text: "Node.js + Express Advocate", icon: <FaNodeJs size={30} className="text-lime-500" /> },
   { text: "Based in Guadalajara, Jalisco", icon: <FaCity size={30} className="text-lime-500" /> },
 ];
 
