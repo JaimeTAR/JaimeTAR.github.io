@@ -3,13 +3,13 @@ import logoImg from "../assets/logo.png";
 
 const Contact = () => {
   return (
-    <section id="contact" className="bg-neutral-950 py-8">
+    <section id="contact" className="bg-neutral-950 pt-8 pb-3 lg:py-8">
       <div className="max-w-[1080px] mx-auto ">
-        <div className="w-[80%] mx-auto relative text-black">
-          <img src={macbookImg} className=" mx-auto" alt="" />
-          <div className="w-[74%] h-[72%] bg-stone-300 absolute top-[14.5%] left-[13.1%] p-4 flex gap-8">
-            <div className="w-6/10">
-              <h2 className="mb-4 uppercase font-bold text-xl">Leave a message</h2>
+        <div className="w-[80%] mx-auto relative lg:text-black">
+          <img src={macbookImg} className="hidden lg:block lg:mx-auto" alt="" />
+          <div className="lg:w-[74%] lg:h-[72%] lg:bg-stone-300 lg:absolute top-[14.5%] lg:left-[13.1%] lg:p-4 lg:flex lg:gap-8">
+            <div className="lg:w-6/10">
+              <h2 className="mb-4 lg:uppercase font-bold text-xl">Leave a message</h2>
               <form action="https://formsubmit.co/bcd36d497f9a8d2ff136747ffd80ec88" method="POST">
                 <input type="hidden" name="_format" value="json" />
                 <input type="hidden" name="_template" value="table" />
@@ -19,7 +19,7 @@ const Contact = () => {
                   type="text"
                   name="name"
                   placeholder="Harrison Wells"
-                  className="bg-stone-100 rounded-md py-1 px-2 w-full mb-3"
+                  className="bg-stone-100 mb-3 rounded-md py-1 px-2 w-full text-black"
                   required
                 />
                 <label htmlFor="email_input">Email *</label>
@@ -28,7 +28,7 @@ const Contact = () => {
                   type="email"
                   name="email"
                   placeholder="harrison.wells@starlabs.com"
-                  className="bg-stone-100 mb-3 rounded-md py-1 px-2 w-full"
+                  className="bg-stone-100 mb-3 rounded-md py-1 px-2 w-full text-black"
                   required
                 />
                 <label htmlFor="message_input">Message *</label>
@@ -36,7 +36,7 @@ const Contact = () => {
                   name="message"
                   id="message_input"
                   placeholder="Hi, im interested in your skills! Please reach out to this email."
-                  className="bg-stone-100 mb-3 rounded-md py-1 px-2 w-full resize-none h-[10%]"
+                  className="bg-stone-100 mb-3 rounded-md py-1 px-2 w-full resize-none lg:h-[10%] h-24 text-black"
                   required
                 />
                 <button
@@ -51,9 +51,9 @@ const Contact = () => {
               <img
                 src={logoImg}
                 alt="Logo"
-                className="border-4 border-emerald-500 rounded-full p-2 overflow-clip h-auto max-w-28 mx-auto mb-3"
+                className="hidden lg:block border-4 border-emerald-500 rounded-full p-2 overflow-clip h-auto max-w-28 mx-auto mb-3"
               />
-              <div className="w-full font-bold h-auto bg-emerald-500 text-white px-4 py-2 rounded-md">
+              <div className="hidden lg:block w-full font-bold h-auto bg-emerald-500 text-white px-4 py-2 rounded-md">
                 <p className="py-2 border-b-2 border-dashed">Jaime Alfaro</p>
                 <p className="py-2">Guadalajara, Jal.</p>
               </div>

@@ -3,17 +3,58 @@ import { FaBookOpen } from "react-icons/fa";
 import { MdOutlineWeb } from "react-icons/md";
 import { FaGraduationCap } from "react-icons/fa6";
 import { PiJoystickFill } from "react-icons/pi";
+import { ReactNode } from "react";
+
+interface TimelineEvent {
+  title: string;
+  description: string | null;
+  date: string;
+  icon: ReactNode;
+}
+
+const timelineEvents: TimelineEvent[] = [
+  {
+    title: "Started TecMilenio University",
+    description: "Bachelor in Software Development Engineering",
+    date: "2022",
+    icon: <FaBookOpen />,
+  },
+  {
+    title: "Cáritas de Guadalajara",
+    description: "Project Manager in interactive webpage",
+    date: "2023",
+    icon: <MdOutlineWeb />,
+  },
+  {
+    title: "Researcher Network App",
+    description: "Personal project.",
+    date: "2024",
+    icon: <PiJoystickFill />,
+  },
+  {
+    title: "Restaurant Management System",
+    description: "Personal project.",
+    date: "Present",
+    icon: <PiJoystickFill />,
+  },
+  {
+    title: "Graduating from TecMilenio University",
+    description: null,
+    date: "2026",
+    icon: <FaGraduationCap />,
+  },
+];
 
 const About = () => {
   return (
     <section className="bg-neutral-800">
-      <div className="max-w-[1080px] mx-auto py-12 flex gap-[2.5%]">
+      <div className="max-w-[1080px] mx-auto py-6 lg;py-12 md:flex md:gap-[2.5%] px-6">
         <img
           src={image}
           alt="Logo"
-          className="border-4 border-lime-600 rounded-full p-2 overflow-clip h-fit max-w-[12.5%]"
+          className="hidden lg:block border-4 border-lime-600 rounded-full p-2 overflow-clip h-fit lg:max-w-[12.5%]"
         />
-        <div className="max-w-[60%] text-lg">
+        <div className="lg:max-w-[60%] text-lg">
           <h1 className="text-3xl font-bold border-b-2 w-fit pr-1 mb-4">About me </h1>
           <p>
             I'm a Software Engineering student in my 6th semester, passionate about coding, especially in Java,
@@ -31,61 +72,19 @@ const About = () => {
             tackling challenges that push my skills further.
           </p>
         </div>
-        <div className="max-w-[25%] ml-[5.5%] text-sm border-l-2 pl-4 flex flex-col justify-evenly">
-          <div className="relative my-4 hover:scale-105 transform-all duration-300">
-            <div className="absolute -left-[74px] flex items-center gap-2">
-              2022
-              <span className="bg-lime-500 p-1 rounded-full text-white border-6 border-neutral-800">
-                <FaBookOpen />
-              </span>
+        <div className="mt-8 ml-18 md:mt-0 md:max-w-[25%] md:ml-[10%] text-sm border-l-2 pl-4 flex flex-col justify-evenly">
+          {timelineEvents.map((event) => (
+            <div className="relative my-4 hover:scale-105 transform-all duration-300">
+              <div className="absolute -left-[120px] flex items-center gap-2 min-w-30 justify-end">
+                {event.date}
+                <span className="bg-lime-500 p-1 rounded-full text-white border-6 border-neutral-800">
+                  {event.icon}
+                </span>
+              </div>
+              <h2 className="font-bold text-lime-500 mb-2 mt-1">{event.title}</h2>
+              {event.description && <p className="text-xs">{event.description}</p>}
             </div>
-            <h2 className="font-bold text-lime-500 mb-2 mt-1">Started TecMilenio University</h2>
-            <p className="text-xs">Bachelor in Software Development Engineering</p>
-          </div>
-
-          <div className="relative my-4 hover:scale-105 transform-all duration-300">
-            <div className="absolute -left-[74px] flex items-center gap-2">
-              2023
-              <span className="bg-lime-500 p-1 rounded-full text-white border-6 border-neutral-800">
-                <MdOutlineWeb />
-              </span>
-            </div>
-            <h2 className="font-bold text-lime-500 mb-2 mt-1">Cáritas de Guadalajara</h2>
-            <p className="text-xs">Project Manager in interactive webpage </p>
-          </div>
-
-          <div className="relative my-4 hover:scale-105 transform-all duration-300">
-            <div className="absolute -left-[74px] flex items-center gap-2">
-              2024
-              <span className="bg-lime-500 p-1 rounded-full text-white border-6 border-neutral-800">
-                <PiJoystickFill />
-              </span>
-            </div>
-            <h2 className="font-bold text-lime-500 mb-2 mt-1">Researcher Network App</h2>
-            <p className="text-xs">Personal project.</p>
-          </div>
-
-          <div className="relative my-4 hover:scale-105 transform-all duration-300">
-            <div className="absolute -left-[89px] flex items-center gap-2">
-              Present
-              <span className="bg-lime-500 p-1 rounded-full text-white border-6 border-neutral-800">
-                <PiJoystickFill />
-              </span>
-            </div>
-            <h2 className="font-bold text-lime-500 mb-2 mt-1">Restaurant Management System</h2>
-            <p className="text-xs">Personal project.</p>
-          </div>
-
-          <div className="relative my-4 hover:scale-105 transform-all duration-300">
-            <div className="absolute -left-[74px] flex items-center gap-2">
-              2026
-              <span className="bg-lime-500 p-1 rounded-full text-white border-6 border-neutral-800">
-                <FaGraduationCap />
-              </span>
-            </div>
-            <h2 className="font-bold text-lime-500 mb-2 mt-1">Graduating from TecMilenio University</h2>
-            <p className="text-xs">Personal project.</p>
-          </div>
+          ))}
         </div>
       </div>
     </section>

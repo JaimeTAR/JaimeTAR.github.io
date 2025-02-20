@@ -38,36 +38,36 @@ function Hero() {
   }, []);
   return (
     <header>
-      <section className="relative py-16 flex flex-col justify-center items-center bg-stone-950">
+      <section className="relative py-8 md:py-16 flex flex-col justify-center items-center bg-stone-950">
         <BgNoise />
         <img
           src={image}
           alt="Logo"
-          className="border-4 border-lime-600 rounded-full p-2 overflow-clip h-auto max-w-96 z-10"
+          className="border-4 border-lime-600 rounded-full p-2 overflow-clip h-auto w-96 z-10 max-w-[50%]"
         />
-        <div className="flex items-end gap-4 my-6 z-10">
-          <ul className="flex items-center justify-center border-t-4 border-lime-600 h-fit">
+        <div className="flex items-center gap-4 my-6 z-10 text-center px-6">
+          <ul className="flex items-center justify-center border-t-4 border-lime-600 h-fit self-end">
             <li className="h-fit px-2 pt-2 pb-2 hover:text-lime-500 cursor-pointer transition-all duration-300 hover:pt-3 hover:px-3">
               <a href="https://github.com/JaimeTAR" target="blank">
-                <FaGithub size={25} />
+                <FaGithub size={"full"} className="w-4 sm:w-6" />
               </a>
             </li>
           </ul>
           <div>
-            <h1 className="text-6xl font-extrabold bg-gradient-to-r from-lime-600 via-green-500 to-lime-600 bg-clip-text text-transparent">
+            <h1 className="text-2xl sm:text-6xl font-extrabold bg-gradient-to-r from-lime-600 via-green-500 to-lime-600 bg-clip-text text-transparent">
               Jaime Alfaro
             </h1>
           </div>
-          <ul className="flex items-center justify-center border-t-4 border-lime-600 h-fit">
+          <ul className="flex items-center justify-center border-t-4 border-lime-600 h-fit self-end">
             <li className="h-fit px-2 pt-2 pb-2 hover:text-lime-500 cursor-pointer transition-all duration-300 hover:pt-3 hover:px-3">
               <a href="https://www.linkedin.com/in/jaimetar/" target="blank">
-                <FaLinkedin size={25} />
+                <FaLinkedin size={"full"} className="w-4 sm:w-6" />
               </a>
             </li>
           </ul>
         </div>
         <div className="flex items-center justify-center mb-8 z-10">
-          <div className="text-2xl relative overflow-hidden w-full">
+          <div className="text-md sm:text-2xl relative overflow-hidden w-full">
             <div
               className={`flex items-center justify-center gap-2 transition-all duration-300 ${
                 isAnimating ? "opacity-0 translate-y-8" : "opacity-100 translate-y-0"
@@ -78,7 +78,7 @@ function Hero() {
             </div>
           </div>
         </div>
-        <button className="border-2 px-4 py-2 rounded-md hover:border-lime-500 hover:text-lime-500 transition-colors duration-300 cursor-pointer z-10">
+        <button className="text-[0.75rem] sm:text-lg border-2 px-4 py-2 rounded-md hover:border-lime-500 hover:text-lime-500 transition-colors duration-300 cursor-pointer z-10">
           <a href="#contact">Contact me</a>
         </button>
       </section>
