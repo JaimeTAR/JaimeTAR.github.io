@@ -9,8 +9,13 @@ const Contact = () => {
           <img src={macbookImg} className="hidden lg:block lg:mx-auto" alt="" />
           <div className="lg:w-[74%] lg:h-[72%] lg:bg-stone-300 lg:absolute top-[14.5%] lg:left-[13.1%] lg:p-4 lg:flex lg:gap-8">
             <div className="lg:w-6/10">
-              <h2 className="mb-4 lg:uppercase font-bold text-xl">Leave a message</h2>
-              <form action="https://formsubmit.co/bcd36d497f9a8d2ff136747ffd80ec88" method="POST">
+              <h2 className="mb-4 lg:uppercase font-bold text-xl">
+                Leave a message
+              </h2>
+              <form
+                action="https://formsubmit.co/bcd36d497f9a8d2ff136747ffd80ec88"
+                method="POST"
+              >
                 <input type="hidden" name="_format" value="json" />
                 <input type="hidden" name="_template" value="table" />
                 <label htmlFor="name_input">Name *</label>
@@ -18,7 +23,7 @@ const Contact = () => {
                   id="name_input"
                   type="text"
                   name="name"
-                  placeholder="Harrison Wells"
+                  placeholder="Tyrion Lannister"
                   className="bg-stone-100 mb-3 rounded-md py-1 px-2 w-full text-black"
                   required
                 />
@@ -27,7 +32,7 @@ const Contact = () => {
                   id="email_input"
                   type="email"
                   name="email"
-                  placeholder="harrison.wells@starlabs.com"
+                  placeholder="tyrion.lannister@casterlyrock.com"
                   className="bg-stone-100 mb-3 rounded-md py-1 px-2 w-full text-black"
                   required
                 />
@@ -35,7 +40,7 @@ const Contact = () => {
                 <textarea
                   name="message"
                   id="message_input"
-                  placeholder="Hi, im interested in your skills! Please reach out to this email."
+                  placeholder="They say a wise man never turns down an interesting offer. Consider this one. Let's talk."
                   className="bg-stone-100 mb-3 rounded-md py-1 px-2 w-full resize-none lg:h-[10%] h-24 text-black"
                   required
                 />
