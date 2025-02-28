@@ -39,8 +39,8 @@ And open the link from the console in your browser!
 
 ## 📸 Screenshots
 
-![Hero Screenshot](https://github.com/user-attachments/assets/05c5c1c1-13f7-49e0-b736-f79cd8847127)
-![Projects Screenshot](https://github.com/user-attachments/assets/14ec4533-bf19-44df-bfbc-104a6bdd093e)
+<img src="https://github.com/user-attachments/assets/05c5c1c1-13f7-49e0-b736-f79cd8847127" style="margin: 20px;">
+<img src="https://github.com/user-attachments/assets/14ec4533-bf19-44df-bfbc-104a6bdd093e" style="margin: 20px;">
 
 ## 📬 Contact
 
