@@ -134,7 +134,7 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
-    <section className="bg-neutral-800 py-8">
+    <section className="bg-neutral-800 py-8" id="projects">
       <div className="max-w-[1080px] mx-auto text-center">
         <h1 className="relative mb-10 text-2xl md:text-4xl font-bold text-center md:before:absolute md:before:top-1/2 md:before:left-12 md:before:w-1/5 md:before:h-[3px] md:before:bg-neutral-200 md:after:absolute md:after:top-1/2 md:after:right-12 md:after:w-1/5 md:after:h-[3px] md:after:bg-neutral-200">
           Most recent projects
@@ -150,6 +150,7 @@ const Projects = () => {
                 }
                 onClick={() => {
                   setSelectedProject(project);
+                  window.location.href = "#projects";
                 }}
               >
                 <div className="flex justify-center items-center mb-2 w-full aspect-15/9 bg-stone-900 rounded-md mx-auto p-2 group-hover:bg-lime-800 transition-all duration-500">
