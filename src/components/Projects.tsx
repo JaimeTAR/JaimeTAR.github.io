@@ -23,13 +23,14 @@ const projects: Project[] = [
     title: "This Portfolio!",
     subtitle: "Static webpage",
     description: (
-      <p className="md:px-6">
-        This project was made using React with Typescript for the content, and Tailwind for the styling. It took about 2
-        days to deploy completely.
+      <>
+        This project was made using React with Typescript for the content, and
+        Tailwind for the styling. It took about 2 days to deploy completely.
         <br />
-        <br /> Right now, it is hosted on my personal GitHub page, and I'm using FormSubmit for the Contact section,
-        which makes it easier for the page to be static and maintaining it backend-less.
-      </p>
+        <br /> Right now, it is hosted on my personal GitHub page, and I'm using
+        FormSubmit for the Contact section, which makes it easier for the page
+        to be static and maintaining it backend-less.
+      </>
     ),
     githubLink: "https://github.com/JaimeTAR/JaimeTAR.github.io",
     pageLink: "#",
@@ -41,32 +42,43 @@ const projects: Project[] = [
     title: "Restaurant Management System",
     subtitle: "CSR WebApp",
     description: (
-      <p className="md:px-6">
-        This is definetly my most ambitious project yet, it is about a RMS, but instead of being an App, it is going to
-        be a WebApp, making it more accessible and easier to adapt into a restaurant.
+      <>
+        This is definetly my most ambitious project yet, it is about a RMS, but
+        instead of being an App, it is going to be a WebApp, making it more
+        accessible and easier to adapt into a restaurant.
         <br />
-        <br /> Unfortunately i can't show you any code or screens because of an NDA, but I can tell you the technologies
-        I'm using to make this project possible, which are listed in the left.
-      </p>
+        <br /> Unfortunately i can't show you any code or screens because of an
+        NDA, but I can tell you the technologies I'm using to make this project
+        possible, which are listed in the left.
+      </>
     ),
     githubLink: null,
     pageLink: null,
     year: "2025",
     imgSrc: ConfidentialImg,
-    tech: ["React", "Tailwind", "TypeScript", "Node.js", "Express", "PostgreSQL"],
+    tech: [
+      "React",
+      "Tailwind",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+    ],
   },
   {
     title: "Researcher Network App",
     subtitle: "Android App",
     description: (
-      <p className="md:px-6">
-        This was the final project for my college Mobile App Development course. This was my first approach to a
-        real-life problem solving app, so I learned a lot about developing for Android with Java and Kotlin.
+      <>
+        This was the final project for my college Mobile App Development course.
+        This was my first approach to a real-life problem solving app, so I
+        learned a lot about developing for Android with Java and Kotlin.
         <br />
-        <br /> I had to create a REST API to connect my app with my PostgreSQL database, so I used Python with Flask for
-        faster development. And for the connection with Android, I used Retrofit for simplicity purposes. Finally, for
-        testing the endpoints, I used Postman.
-      </p>
+        <br /> I had to create a REST API to connect my app with my PostgreSQL
+        database, so I used Python with Flask for faster development. And for
+        the connection with Android, I used Retrofit for simplicity purposes.
+        Finally, for testing the endpoints, I used Postman.
+      </>
     ),
     githubLink: null,
     pageLink: null,
@@ -78,15 +90,17 @@ const projects: Project[] = [
     title: "PuperBot",
     subtitle: "Discord Music Bot",
     description: (
-      <p className="md:px-6">
-        This was a project I did for fun back when I needed a music discord bot that let me put a song in the next spot
-        in the queue. Obviously there are other bots in discord with this feature, but all of them required some sort of
-        payment, so I did it myself!
+      <>
+        This was a project I did for fun back when I needed a music discord bot
+        that let me put a song in the next spot in the queue. Obviously there
+        are other bots in discord with this feature, but all of them required
+        some sort of payment, so I did it myself!
         <br />
-        <br /> This bot was made with Python and the library Discord.py, which is 100 times easier than with its
-        JavaScript counterpart. It is capable of playing any song or video from YouTube and Spotify either from a link
+        <br /> This bot was made with Python and the library Discord.py, which
+        is 100 times easier than with its JavaScript counterpart. It is capable
+        of playing any song or video from YouTube and Spotify either from a link
         or a simple search.
-      </p>
+      </>
     ),
     githubLink: null,
     pageLink: null,
@@ -98,13 +112,15 @@ const projects: Project[] = [
     title: "Cáritas de Guadalajara",
     subtitle: "Interactive webpage",
     description: (
-      <p className="md:px-6">
-        This was a my first project where I was Project Manager. I had a team of 5 software students, and since this was
-        our very first web project, we decided to build it natively, using pure HTML, CSS and JavaScript.
+      <>
+        This was a my first project where I was Project Manager. I had a team of
+        5 software students, and since this was our very first web project, we
+        decided to build it natively, using pure HTML, CSS and JavaScript.
         <br />
-        <br /> With this project we fully learned all of the basics of web development, and since then I've loved
-        frontend. I had a lot of fun styling some of the views with plain CSS.
-      </p>
+        <br /> With this project we fully learned all of the basics of web
+        development, and since then I've loved frontend. I had a lot of fun
+        styling some of the views with plain CSS.
+      </>
     ),
     githubLink: "https://github.com/JaimeTAR/PaginaWebCaritas",
     pageLink: "caritasgdl1975.github.io",
@@ -137,7 +153,11 @@ const Projects = () => {
                 }}
               >
                 <div className="flex justify-center items-center mb-2 w-full aspect-15/9 bg-stone-900 rounded-md mx-auto p-2 group-hover:bg-lime-800 transition-all duration-500">
-                  <img src={project.imgSrc} alt="Cáritas Thumbnail" className="max-h-full h-full object-contain" />
+                  <img
+                    src={project.imgSrc}
+                    alt="Cáritas Thumbnail"
+                    className="max-h-full h-full object-contain"
+                  />
                 </div>
                 <div className="flex justify-between">
                   <h1 className="pl-1 text-lg font-semibold group-hover:text-lime-500 transition-all duration-500">
@@ -154,7 +174,10 @@ const Projects = () => {
                 <div>
                   <div className="flex gap-1 text-center mt-2 ml-1 flex-wrap">
                     {project.tech.map((language) => (
-                      <div key={project.title + "_" + language + "_card"} className="relative inline-block">
+                      <div
+                        key={project.title + "_" + language + "_card"}
+                        className="relative inline-block"
+                      >
                         <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 via-green-500 to-teal-500 rounded-md" />
                         <p className="text-xs relative bg-stone-950 text-blck px-2 py-1 rounded-md m-[1px]">
                           {language}
@@ -184,7 +207,10 @@ const Projects = () => {
 
               <div className="flex justify-center gap-3 text-center mt-6 flex-wrap">
                 {selectedProject.tech.map((language) => (
-                  <div key={selectedProject.title + "_" + language + "_full"} className="relative inline-block ">
+                  <div
+                    key={selectedProject.title + "_" + language + "_full"}
+                    className="relative inline-block "
+                  >
                     <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 via-green-500 to-teal-500 rounded-md" />
                     <p className="text-sm md:text-lg relative bg-stone-950 text-blck px-2 py-1 rounded-md m-[1px]">
                       {language}
@@ -194,13 +220,18 @@ const Projects = () => {
               </div>
             </div>
             <div className="md:w-6/10 flex flex-col justify-between">
-              <h1 className="text-2xl font-bold mt-6">{selectedProject.title}</h1>
+              <h1 className="text-2xl font-bold mt-6">
+                {selectedProject.title}
+              </h1>
               <p className="py-6 md:py-0">{selectedProject.description}</p>
               <div className="flex self-center md:self-end gap-4">
                 {selectedProject.pageLink && (
                   <button className="group flex items-center gap-2 border-2 px-2 py-1 rounded-md mt-2 w-fit hover:scale-105 transition-all cursor-pointer">
                     <FaShareAltSquare className="group-hover:text-emerald-500" />
-                    <a href={selectedProject.pageLink} target={selectedProject.pageLink == "#" ? "" : "blank"}>
+                    <a
+                      href={selectedProject.pageLink}
+                      target={selectedProject.pageLink == "#" ? "" : "blank"}
+                    >
                       Visit
                     </a>
                   </button>

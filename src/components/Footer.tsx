@@ -12,7 +12,7 @@ const Footer = () => {
           <FaGithub size={20} />
         </a>
         <a
-          href="https://www.linkedin.com/in/jalfarodev/"
+          href="https://www.linkedin.com/in/jaimetar"
           target="blank"
           className="ring-neutral-100 hover:ring-1 p-2 rounded-md transition-all duration-150"
         >
