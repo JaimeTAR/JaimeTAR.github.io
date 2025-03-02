@@ -3,6 +3,7 @@ import PortfolioImg from "../assets/portfolio.webp";
 import ResearcherImg from "../assets/researcher.webp";
 import ConfidentialImg from "../assets/confidential.webp";
 import PuperBotImg from "../assets/puperbot.webp";
+import PlayBookGif from "../assets/playbook.gif";
 import { useState } from "react";
 import { IoArrowBack } from "react-icons/io5";
 import { FaGithub, FaShareAltSquare } from "react-icons/fa";
@@ -24,19 +25,19 @@ const projects: Project[] = [
     subtitle: "Static webpage",
     description: (
       <>
-        This project was made using React with Typescript for the content, and
-        Tailwind for the styling. It took about 2 days to deploy completely.
+        This project was built using React with TypeScript for the content and
+        Tailwind CSS for styling. It took about two days to fully deploy.
         <br />
-        <br /> Right now, it is hosted on my personal GitHub page, and I'm using
-        FormSubmit for the Contact section, which makes it easier for the page
-        to be static and maintaining it backend-less.
+        <br /> Currently, it's hosted on my personal GitHub page, and I
+        integrated FormSubmit for the Contact section, allowing the site to
+        remain fully static and backend-free for easy maintenance.
       </>
     ),
     githubLink: "https://github.com/JaimeTAR/JaimeTAR.github.io",
     pageLink: "#",
     year: "2025",
     imgSrc: PortfolioImg,
-    tech: ["React", "Tailwind", "TypeScript"],
+    tech: ["React", "Tailwind", "TypeScript", "FormSubmitAPI", "GitHub Pages"],
   },
   {
     title: "Restaurant Management System",
@@ -70,36 +71,46 @@ const projects: Project[] = [
     subtitle: "Android App",
     description: (
       <>
-        This was the final project for my college Mobile App Development course.
-        This was my first approach to a real-life problem solving app, so I
-        learned a lot about developing for Android with Java and Kotlin.
+        This was my final project for my college Mobile App Development course
+        and my first experience building a real-world problem-solving
+        application. Through this project, I gained valuable experience in
+        Android development using both Java and Kotlin.
         <br />
-        <br /> I had to create a REST API to connect my app with my PostgreSQL
-        database, so I used Python with Flask for faster development. And for
-        the connection with Android, I used Retrofit for simplicity purposes.
-        Finally, for testing the endpoints, I used Postman.
+        <br /> To integrate the app with a PostgreSQL database, I developed a
+        REST API using Python with Flask for rapid development. I hosted the
+        backend on Render for easy deployment and scalability. For seamless
+        communication between the app and the API, I used Retrofit, and I tested
+        the endpoints with Postman to ensure reliability.
       </>
     ),
     githubLink: null,
     pageLink: null,
     year: "2024",
     imgSrc: ResearcherImg,
-    tech: ["Kotlin", "Java", "PostgreSQL", "Python", "AWS"],
+    tech: [
+      "Kotlin",
+      "Java",
+      "PostgreSQL",
+      "Python",
+      "Flask",
+      "AWS DynamoDB",
+      "Postman",
+      "Render",
+    ],
   },
   {
     title: "PuperBot",
     subtitle: "Discord Music Bot",
     description: (
       <>
-        This was a project I did for fun back when I needed a music discord bot
-        that let me put a song in the next spot in the queue. Obviously there
-        are other bots in discord with this feature, but all of them required
-        some sort of payment, so I did it myself!
+        I built this project for fun when I needed a Discord music bot that
+        allowed me to queue songs in a specific order. While other bots offered
+        this feature, they all required payment, so I decided to create my own!
         <br />
-        <br /> This bot was made with Python and the library Discord.py, which
-        is 100 times easier than with its JavaScript counterpart. It is capable
-        of playing any song or video from YouTube and Spotify either from a link
-        or a simple search.
+        <br /> The bot was developed using Python and Discord.py, which I found
+        much easier to work with compared to its JavaScript counterpart. It can
+        play any song or video from YouTube and Spotify, whether from a direct
+        link or a simple search.
       </>
     ),
     githubLink: null,
@@ -109,17 +120,39 @@ const projects: Project[] = [
     tech: ["Python", "Discord.py"],
   },
   {
+    title: "PlayBook",
+    subtitle: "iOS App",
+    description: (
+      <>
+        This was my first iOS project, focused on frontend development with mock
+        data. Despite its simplicity, building it natively allowed me to gain
+        valuable insights into iOS development.
+        <br />
+        <br /> Working on this project with my team helped us understand the
+        fundamentals of native app development, and I was surprised by how
+        quickly I picked up the basics. In the end, we created a clean,
+        well-designed app that exceeded our initial expectations.
+      </>
+    ),
+    githubLink: "https://github.com/JaimeTAR/PlayBook",
+    pageLink: null,
+    year: "2024",
+    imgSrc: PlayBookGif,
+    tech: ["SwiftUI"],
+  },
+  {
     title: "Cáritas de Guadalajara",
     subtitle: "Interactive webpage",
     description: (
       <>
-        This was a my first project where I was Project Manager. I had a team of
-        5 software students, and since this was our very first web project, we
-        decided to build it natively, using pure HTML, CSS and JavaScript.
+        This was my first experience as a Project Manager, leading a team of
+        five software students. Since it was our first web development project,
+        we decided to build it natively using pure HTML, CSS, and JavaScript.
         <br />
-        <br /> With this project we fully learned all of the basics of web
-        development, and since then I've loved frontend. I had a lot of fun
-        styling some of the views with plain CSS.
+        <br /> Through this project, we gained a solid foundation in web
+        development, and it sparked my passion for frontend. I especially
+        enjoyed styling the views with plain CSS, which made the process both
+        challenging and fun.
       </>
     ),
     githubLink: "https://github.com/JaimeTAR/PaginaWebCaritas",
