@@ -33,7 +33,8 @@ const projects: Project[] = [
         remain fully static and backend-free for easy maintenance.
       </>
     ),
-    githubLink: "https://github.com/JaimeTAR/JaimeTAR.github.io",
+    githubLink:
+      "https://github.com/JaimeTAR/JaimeTAR.github.io?tab=readme-ov-file#jaime-alfaros-web-portfolio",
     pageLink: "#",
     year: "2025",
     imgSrc: PortfolioImg,
@@ -107,17 +108,18 @@ const projects: Project[] = [
         allowed me to queue songs in a specific order. While other bots offered
         this feature, they all required payment, so I decided to create my own!
         <br />
-        <br /> The bot was developed using Python and Discord.py, which I found
-        much easier to work with compared to its JavaScript counterpart. It can
-        play any song or video from YouTube and Spotify, whether from a direct
-        link or a simple search.
+        <br /> The bot was developed using Python and Pycord, which I found much
+        easier to work with compared to its JavaScript counterpart. It can play
+        any song or video from YouTube and Spotify, whether from a direct link
+        or a simple search.
       </>
     ),
-    githubLink: null,
+    githubLink:
+      "https://github.com/JaimeTAR/PuperBot?tab=readme-ov-file#puperbot",
     pageLink: null,
     year: "2024",
     imgSrc: PuperBotImg,
-    tech: ["Python", "Discord.py"],
+    tech: ["Python", "Pycord"],
   },
   {
     title: "PlayBook",
@@ -134,7 +136,8 @@ const projects: Project[] = [
         well-designed app that exceeded our initial expectations.
       </>
     ),
-    githubLink: "https://github.com/JaimeTAR/PlayBook",
+    githubLink:
+      "https://github.com/JaimeTAR/PlayBook?tab=readme-ov-file#playbook",
     pageLink: null,
     year: "2024",
     imgSrc: PlayBookGif,
