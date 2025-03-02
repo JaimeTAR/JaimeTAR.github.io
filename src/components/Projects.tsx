@@ -159,7 +159,7 @@ const projects: Project[] = [
       </>
     ),
     githubLink: "https://github.com/JaimeTAR/PaginaWebCaritas",
-    pageLink: "caritasgdl1975.github.io",
+    pageLink: "https://caritasgdl1975.github.io",
     year: "2023",
     imgSrc: CaritasImg,
     tech: ["HTML", "CSS", "JavaScript"],
