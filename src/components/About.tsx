@@ -1,4 +1,4 @@
-import image from "../assets/logo.png";
+import image from "../assets/logo.webp";
 import { FaBookOpen } from "react-icons/fa";
 import { MdOutlineWeb } from "react-icons/md";
 import { FaGraduationCap } from "react-icons/fa6";

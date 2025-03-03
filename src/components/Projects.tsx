@@ -2,7 +2,7 @@ import CaritasImg from "../assets/caritas.webp";
 import PortfolioImg from "../assets/portfolio.webp";
 import ResearcherImg from "../assets/researcher.webp";
 import ConfidentialImg from "../assets/confidential.webp";
-import PuperBotImg from "../assets/puperbot.webp";
+import PuperBotImg from "../assets/discord_bot.webp";
 import PlayBookGif from "../assets/playbook.gif";
 import { useState } from "react";
 import { IoArrowBack } from "react-icons/io5";

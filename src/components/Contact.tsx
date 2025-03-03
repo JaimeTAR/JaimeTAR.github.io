@@ -1,5 +1,5 @@
-import macbookImg from "../assets/macbook.png";
-import logoImg from "../assets/logo.png";
+import macbookImg from "../assets/macbook.webp";
+import logoImg from "../assets/logo.webp";
 
 const Contact = () => {
   return (

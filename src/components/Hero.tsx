@@ -1,5 +1,5 @@
 import { FaCity, FaNodeJs } from "react-icons/fa6";
-import image from "../assets/logo.png";
+import image from "../assets/logo.webp";
 import BgNoise from "./BgNoise";
 import {
   FaLinkedin,
